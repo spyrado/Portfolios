@@ -1,3 +1,5 @@
 // Bootstrap v4
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Custom css
+@import "layout/menu";
