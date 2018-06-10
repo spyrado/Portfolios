@@ -6762,14 +6762,38 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: space-around;
   align-items: center;
   padding: .5rem 0; }
+  @media (min-width: 769px) {
+    .menu-header .navbar {
+      justify-content: space-between; } }
 .menu-header .navbar-nav {
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-around; }
+  @media (min-width: 769px) {
+    .menu-header .navbar-nav {
+      flex-grow: 0;
+      justify-content: flex-start; } }
 .menu-header .nav-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center; }
+  @media (min-width: 769px) {
+    .menu-header .nav-item {
+      flex-direction: row;
+      align-items: center;
+      margin-right: 2rem; }
+      .menu-header .nav-item::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: 0%;
+        height: 2px;
+        transition: .3s;
+        background: linear-gradient(to right, #a60fd3 14%, #3abaa7 77.7%); }
+      .menu-header .nav-item:hover::after {
+        width: 100%; } }
   .menu-header .nav-item .menu-icon {
     background: -webkit-linear-gradient(#a60fd3 14%, #3abaa7 77.7%);
     -webkit-background-clip: text;
@@ -6782,5 +6806,8 @@ a.text-dark:hover, a.text-dark:focus {
     @media not all and (min-width: 330px) {
       .menu-header .nav-item .nav-link {
         font-size: .7rem; } }
+    @media (min-width: 769px) {
+      .menu-header .nav-item .nav-link {
+        font-size: .9rem; } }
 
 /*# sourceMappingURL=estilos.css.map */
