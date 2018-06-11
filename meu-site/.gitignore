@@ -1,7 +1,5 @@
 .sass-cache/
-node_modules/bootstrap/package.json
-node_modules/jquery/package.json
-node_modules/popper.js/package.json
-package-lock.json
 package.json
-node_modules/undefined/
+package-lock.json
+.sass-cache
+node_modules/*
