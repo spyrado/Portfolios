@@ -1,3 +1,4 @@
+package.json
 package-lock.json
 .sass-cache
-node_modules/undefined/
+node_modules/*
