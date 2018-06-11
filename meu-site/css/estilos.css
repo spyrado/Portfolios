@@ -6762,14 +6762,14 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: space-around;
   align-items: center;
   padding: .5rem 0; }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .menu-header .navbar {
       justify-content: space-between; } }
 .menu-header .navbar-nav {
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-around; }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .menu-header .navbar-nav {
       flex-grow: 0;
       justify-content: flex-start; } }
@@ -6778,11 +6778,11 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-direction: column;
   text-align: center; }
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     .menu-header .nav-item {
       flex-direction: row;
       align-items: center;
-      margin-right: 2rem; }
+      margin-left: 2rem; }
       .menu-header .nav-item::after {
         content: '';
         display: block;
@@ -6806,7 +6806,7 @@ a.text-dark:hover, a.text-dark:focus {
     @media not all and (min-width: 330px) {
       .menu-header .nav-item .nav-link {
         font-size: .7rem; } }
-    @media (min-width: 769px) {
+    @media (min-width: 1024px) {
       .menu-header .nav-item .nav-link {
         font-size: .9rem; } }
 
