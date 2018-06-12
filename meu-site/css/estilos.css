@@ -6817,4 +6817,8 @@ a.text-dark:hover, a.text-dark:focus {
   transform: translateY(102%);
   transition: .3s; }
 
+.show-menu {
+  transform: translateY(0%);
+  transition: .3s; }
+
 /*# sourceMappingURL=estilos.css.map */
