@@ -1,4 +1,3 @@
 $(function(){
     menuInterativo();
-    hideMenuOnScroll();
 });

@@ -5,22 +5,10 @@ function menuInterativo(){
     interandoComMenu();
     configuraMenuOnResize();
     configuraMenuOnLoad();
+    hideMenuOnScroll();
 }
 
-function tamanhoTelaMaiorQue(tamanhoMaior){
-    let result = $(document).width() >= tamanhoMaior ? true : false;
-    return result;
-}
-function tamanhoTelaMenorQue(tamanhoMenor){
-    let result = $(document).width() <= tamanhoMenor ? true : false;
-    return result;
-}
-function adicionaClasse(seletor, classe){
-    $(seletor).addClass(classe);
-}
-function removeClasse(seletor, classe){
-    $(seletor).removeClass(classe);
-}
+
 function configuraMenuOnLoad(){
     if(tamanhoTelaMaiorQue(tela_1024)){
             adicionaClasse($(".navbar"),"container");
@@ -40,22 +28,26 @@ function configuraMenuOnLoad(){
        }
 }
 function configuraMenuOnResize(){
+    let menuHeader = $(".menu-header");
     $(window).resize(function(){
        if(tamanhoTelaMaiorQue(tela_1024)){
             adicionaClasse($(".navbar"),"container");
             removeClasse($(".navbar-brand"),"border-right");
-            removeClasse($(".menu-header"),"fixed-bottom");
-            adicionaClasse($(".menu-header"),"fixed-top");
-            removeClasse($(".menu-header"),"border-top");
-            adicionaClasse($(".menu-header"),"border-bottom");
+            removeClasse(menuHeader,"fixed-bottom");
+            adicionaClasse(menuHeader,"fixed-top");
+            removeClasse(menuHeader,"border-top");
+            adicionaClasse(menuHeader,"border-bottom");
+            menuHeader.removeClass("show-menu hide-menu");
             limpaClassesMobile();
        }else{
             removeClasse($(".navbar"),"container");
             adicionaClasse($(".navbar-brand"),"border-right");
-            adicionaClasse($(".menu-header"),"fixed-bottom");
-            removeClasse($(".menu-header"),"fixed-top");
-            adicionaClasse($(".menu-header"),"border-top");
-            removeClasse($(".menu-header"),"border-bottom");
+            adicionaClasse(menuHeader,"fixed-bottom");
+            removeClasse(menuHeader,"fixed-top");
+            adicionaClasse(menuHeader,"border-top");
+            removeClasse(menuHeader,"border-bottom");
+            menuHeader.addClass("show-menu");
+            menuHeader.removeClass("hide-menu");
             incluiClassesMobile();
        }
     });
@@ -85,17 +77,27 @@ function exibeNomeIcone(self,listaLi, selected){
 }
 function hideMenuOnScroll(){
     let scrollInicial = 0;
-    $(document).scroll(function(){
-        if($(this).scrollTop() > scrollInicial){
-            $(".menu-header").removeClass("show-menu");
-            $(".menu-header").addClass("hide-menu");
-        }else{
-            $(".menu-header").removeClass("hide-menu");
-            $(".menu-header").addClass("show-menu");
-        }
-        scrollInicial = $(this).scrollTop();
-    });
-}
+    let menuHeader = $(".menu-header");
+    
+    
+        
+        $(document).scroll(function(){
+            if(tamanhoTelaMenorQue(tela_1023)){
+                
+                if($(this).scrollTop() > scrollInicial){
+                    menuHeader.removeClass("show-menu");
+                    menuHeader.addClass("hide-menu");
+                }else{
+                    menuHeader.removeClass("hide-menu");
+                    menuHeader.addClass("show-menu");
+                }
+                scrollInicial = $(this).scrollTop();
+            }else{
+             menuHeader.removeClass("show-menu hide-menu");
+            }
+        });
+    }
+
 function limpaClassesMobile(){
     $(".navbar-nav").find(".nav-item").each(function(i,e){
        $(e).find(".nav-link").removeClass("d-none"); 
@@ -106,4 +108,17 @@ function incluiClassesMobile(){
         if(!$(this).hasClass("selected"))
             $(e).find(".nav-link").addClass("d-none"); 
     });
+}
+
+function tamanhoTelaMaiorQue(tamanhoMaior){
+    return $(document).width() >= tamanhoMaior ? true : false;
+}
+function tamanhoTelaMenorQue(tamanhoMenor){
+    return $(document).width() <= tamanhoMenor ? true : false;
+}
+function adicionaClasse(seletor, classe){
+    $(seletor).addClass(classe);
+}
+function removeClasse(seletor, classe){
+    $(seletor).removeClass(classe);
 }
