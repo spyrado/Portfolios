@@ -37,8 +37,11 @@ function configuraMenuOnResize(){
             adicionaClasse(menuHeader,"fixed-top");
             removeClasse(menuHeader,"border-top");
             adicionaClasse(menuHeader,"border-bottom");
-            menuHeader.removeClass("show-menu hide-menu");
             limpaClassesMobile();
+            //verificaSeLiFoiClicada
+            
+            //hideMenuOnScroll
+            menuHeader.removeClass("show-menu hide-menu");
        }else{
             removeClasse($(".navbar"),"container");
             adicionaClasse($(".navbar-brand"),"border-right");
@@ -46,9 +49,11 @@ function configuraMenuOnResize(){
             removeClasse(menuHeader,"fixed-top");
             adicionaClasse(menuHeader,"border-top");
             removeClasse(menuHeader,"border-bottom");
+            incluiClassesMobile();
+           
+            //hideMenuOnScroll
             menuHeader.addClass("show-menu");
             menuHeader.removeClass("hide-menu");
-            incluiClassesMobile();
        }
     });
 }
