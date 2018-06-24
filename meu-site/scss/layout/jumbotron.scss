@@ -1,0 +1,47 @@
+.principal{
+    
+    .jumbotron{
+           
+        background: linear-gradient(#f9f9f9 50%, rgba($cor-principal, 0.66) 90%);
+        
+         @media #{$mq-1024}{
+            padding-top: 4rem;
+        }
+        
+        .title{
+            color: $cor-principal;   
+        }
+        
+       
+    }
+    
+    .quadro{
+        
+        .quadro-legend{
+            
+            color: $white;
+            font-weight: bold;
+            
+            &::after{
+                content: '';
+                display: block;
+                height: 3px;
+                width: 5%;
+                margin: 0 auto;
+                background: $white;
+                margin-top: 4px;
+                transition: .2s;
+                animation: barra-animada 1s ease-in-out 1s infinite alternate;
+            }
+        }
+    }
+     @media #{$mq-1024}{
+         
+        padding-top: 3.9375rem;
+    }
+}
+
+@keyframes barra-animada {
+    0%   {width: 0%}
+    100% {width: 250px}
+}
