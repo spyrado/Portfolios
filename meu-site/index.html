@@ -14,6 +14,7 @@
     
     <!-- Bootstrap and Custom css -->
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/">
 
 </head>
 
@@ -47,15 +48,54 @@
     </header>
     
     <main class="principal">
+       
         <section class="jumbotron jumbotron-fluid">
             <div class="container text-center">
-                <h1 class="title">Nicolas Guilherme Matheus</h1>
+                <h1 class="title mb-3">Nicolas Guilherme Matheus</h1>
                 <figure class="quadro">
                     <img src="img/nicolas-guilherme.jpg" alt="Foto de Nicolas Guilherme Matheus" class="rounded-circle">
                     <figcaption class="quadro-legend">Desenvolvedor Front-End</figcaption>
                 </figure>
             </div>
         </section>
+        
+        <section class="section-skill-tree" id="section-skill-tree">
+
+            <h2 class="title">Árvore de Habilidades</h2>
+            <div class="skill-tree" id="skill-tree">
+                <div class="node-left">
+                    <img src="img/logo/html5-logo.png" alt="HTML5" class="html5 see-left" data-tooltip-left="HTML5">
+                </div>
+                <div class="node-right">
+                    <img src="img/logo/css3-logo.png" alt="CSS3" class="css3 see-right">
+                </div>
+                <div class="node-left">
+                    <img src="img/logo/javascript-logo.png" alt="JavaScript" class="js see-left">
+                </div>
+                <div class="node-right">
+                    <img src="img/logo/jquery-logo.png" alt="JQuery" class="jquery see-right">
+                </div>
+                <div class="node-left">
+                    <img src="img/logo/rwd-logo.png" alt="Responsive Web Design" class="rwd see-left">
+                </div>
+                <div class="node-right">
+                    <img src="img/logo/php-logo.png" alt="PHP" class="php see-right">
+                </div>
+                <div class="node-left">
+                    <img src="img/logo/MySQL-logo.png" alt="MySql" class="mysql see-left">
+                </div>
+                <div class="node-right">
+                    <img src="img/logo/seo-img.jpg" alt="SEO" class="seo see-right">
+                </div>
+                <div class="node-left">
+                    <code class="default-color regex see-left">
+                               /^<span class="reg">[R]eg</span>ular\s</br><span class="ex">[E]x</span>pression$/
+                            </code>
+                </div>
+                <div class="log"></div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- jquery.js / popper.js / bootstrap.js -->
@@ -66,6 +106,7 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <script src="js/layout/menu.js"></script>  
+    <script src="js/animation-tree.js"></script>  
 
 </body>
 
