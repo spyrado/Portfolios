@@ -6780,7 +6780,8 @@ a.text-dark:hover, a.text-dark:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    cursor: pointer; }
     @media (min-width: 1024px) {
       .menu-header .nav-item {
         flex-direction: row;
@@ -6794,11 +6795,11 @@ a.text-dark:hover, a.text-dark:focus {
           width: 0%;
           height: 2px;
           transition: .3s;
-          background: linear-gradient(to right, #a60fd3 14%, #3abaa7 77.7%); }
+          background: linear-gradient(to right, #8000ff 14%, #3abaa7 77.7%); }
         .menu-header .nav-item:hover::after {
           width: 100%; } }
     .menu-header .nav-item .menu-icon {
-      background: -webkit-linear-gradient(#a60fd3 14%, #3abaa7 77.7%);
+      background: -webkit-linear-gradient(#8000ff 14%, #3abaa7 77.7%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .menu-header .nav-item .nav-link {
@@ -6820,5 +6821,35 @@ a.text-dark:hover, a.text-dark:focus {
 .show-menu {
   transform: translateY(0%);
   transition: .3s; }
+
+.principal .jumbotron {
+  background: linear-gradient(#f9f9f9 50%, rgba(128, 0, 255, 0.66) 90%); }
+  @media (min-width: 1024px) {
+    .principal .jumbotron {
+      padding-top: 4rem; } }
+  .principal .jumbotron .title {
+    color: #8000ff; }
+.principal .quadro .quadro-legend {
+  color: #fff;
+  font-weight: bold; }
+  .principal .quadro .quadro-legend::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 5%;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 4px;
+    transition: .2s;
+    animation: barra-animada 1s ease-in-out 1s infinite alternate; }
+@media (min-width: 1024px) {
+  .principal {
+    padding-top: 3.9375rem; } }
+
+@keyframes barra-animada {
+  0% {
+    width: 0%; }
+  100% {
+    width: 250px; } }
 
 /*# sourceMappingURL=estilos.css.map */

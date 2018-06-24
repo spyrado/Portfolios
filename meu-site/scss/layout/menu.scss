@@ -28,7 +28,7 @@
         
         @media #{$mq-1024}{
             flex-grow: 0;
-            justify-content: flex-start
+            justify-content: flex-start;
         }
     }
     .nav-item{
@@ -37,6 +37,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: flex-end;
+        cursor: pointer;
         @media #{$mq-1024}{
             flex-direction: row;
             align-items: center;
@@ -49,7 +50,7 @@
                 width: 0%;
                 height: 2px;
                 transition: .3s;
-                background: linear-gradient(to right, #a60fd3 14%, #3abaa7 77.7%);
+                background: linear-gradient(to right, $cor-principal 14%, #3abaa7 77.7%);
             }
             &:hover{
                 &::after{
@@ -59,7 +60,7 @@
             
         }
         .menu-icon{            
-            background: -webkit-linear-gradient(#a60fd3 14%, #3abaa7 77.7%);
+            background: -webkit-linear-gradient($cor-principal 14%, #3abaa7 77.7%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;  
         }        
