@@ -6795,11 +6795,11 @@ a.text-dark:hover, a.text-dark:focus {
           width: 0%;
           height: 2px;
           transition: .3s;
-          background: linear-gradient(to right, #8000ff 14%, #3abaa7 77.7%); }
+          background: linear-gradient(to right, #15FDBD 14%, #3abaa7 77.7%); }
         .menu-header .nav-item:hover::after {
           width: 100%; } }
     .menu-header .nav-item .menu-icon {
-      background: -webkit-linear-gradient(#8000ff 14%, #3abaa7 77.7%);
+      background: -webkit-linear-gradient(#15FDBD 14%, #3abaa7 77.7%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .menu-header .nav-item .nav-link {
@@ -6823,14 +6823,16 @@ a.text-dark:hover, a.text-dark:focus {
   transition: .3s; }
 
 .principal .jumbotron {
-  background: linear-gradient(#f9f9f9 50%, rgba(128, 0, 255, 0.66) 90%); }
+  background: linear-gradient(#f9f9f9 50%, rgba(21, 253, 189, 0.66) 90%);
+  margin-bottom: 0; }
   @media (min-width: 1024px) {
     .principal .jumbotron {
       padding-top: 4rem; } }
   .principal .jumbotron .title {
-    color: #8000ff; }
+    color: #15FDBD;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.32); }
 .principal .quadro .quadro-legend {
-  color: #fff;
+  color: #CA2549;
   font-weight: bold; }
   .principal .quadro .quadro-legend::after {
     content: '';
@@ -6838,7 +6840,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: 3px;
     width: 5%;
     margin: 0 auto;
-    background: #fff;
+    background: #CA2549;
     margin-top: 4px;
     transition: .2s;
     animation: barra-animada 1s ease-in-out 1s infinite alternate; }
@@ -6851,5 +6853,204 @@ a.text-dark:hover, a.text-dark:focus {
     width: 0%; }
   100% {
     width: 250px; } }
+.section-skill-tree {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+
+.section-skill-tree::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.section-skill-tree .title {
+  display: inline-block;
+  color: #CA2549;
+  margin-top: 4rem;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 3px solid #15fdbd;
+  border-radius: 10px;
+  padding: 1rem; }
+
+.section-skill-tree .skill-tree {
+  width: 200px;
+  margin: 4rem auto 0 auto; }
+
+.section-skill-tree .skill-tree::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.section-skill-tree .node-left {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 50px;
+  border-bottom: 0 solid #15fdbd;
+  border-right: 2px solid #15fdbd;
+  border-bottom-left-radius: 1rem;
+  opacity: 0;
+  clear: right; }
+
+.section-skill-tree .node-right {
+  position: relative;
+  left: -2px;
+  float: right;
+  width: 100px;
+  height: 50px;
+  border-bottom: 0 solid #15fdbd;
+  border-left: 2px solid #15fdbd;
+  border-bottom-right-radius: 1rem;
+  opacity: 0;
+  clear: left; }
+
+.log {
+  width: 100px;
+  height: 50px;
+  border-right: 2px solid #15fdbd;
+  clear: both; }
+
+/* Ajuste Logos */
+.see-left,
+.see-right {
+  opacity: 0; }
+
+.skill-tree .html5 {
+  position: absolute;
+  width: 30px;
+  height: 42px;
+  left: -14px;
+  bottom: 11px; }
+
+.skill-tree .css3 {
+  position: absolute;
+  width: 30px;
+  height: 42px;
+  right: -14px;
+  bottom: 10px; }
+
+.skill-tree .js {
+  position: absolute;
+  width: 30px;
+  height: 42px;
+  left: -14px;
+  bottom: 11px; }
+
+.skill-tree .jquery {
+  position: absolute;
+  width: 100px;
+  height: 26px;
+  right: -41px;
+  bottom: 10px; }
+
+.skill-tree .rwd {
+  position: absolute;
+  width: 82px;
+  height: 46px;
+  left: -39px;
+  bottom: 11px; }
+
+.skill-tree .php {
+  position: absolute;
+  width: 50px;
+  height: 34px;
+  right: -26px;
+  bottom: 11px; }
+
+.skill-tree .mysql {
+  position: absolute;
+  width: 100px;
+  height: 52px;
+  left: -47px;
+  bottom: 11px; }
+
+.skill-tree .seo {
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  right: -40px;
+  bottom: 10px; }
+
+.regex {
+  position: absolute;
+  left: -49px;
+  bottom: 10px; }
+
+.reg {
+  color: #690291; }
+
+.ex {
+  color: #F65703; }
+
+.reg,
+.ex {
+  font-weight: bold;
+  font-size: 1rem; }
+
+/* Ajuste da arvore para tablets/desktop */
+@media (min-width: 640px) {
+  .section-skill-tree .skill-tree {
+    width: 300px; }
+
+  .section-skill-tree .node-left {
+    width: 150px;
+    height: 75px; }
+
+  .section-skill-tree .node-right {
+    width: 150px;
+    height: 75px; }
+
+  .log {
+    width: 150px;
+    height: 75px; }
+
+  .skill-tree .html5 {
+    width: 40px;
+    height: 56px;
+    left: -19px; }
+
+  .skill-tree .css3 {
+    width: 40px;
+    height: 56px;
+    right: -20px; }
+
+  .skill-tree .js {
+    width: 40px;
+    height: 56px;
+    left: -19px; }
+
+  .skill-tree .jquery {
+    width: 125px;
+    height: 32px;
+    right: -49px; }
+
+  .skill-tree .rwd {
+    width: 120px;
+    height: 67px;
+    left: -59px; }
+
+  .skill-tree .php {
+    width: 70px;
+    height: 48px;
+    right: -35px; }
+
+  .skill-tree .mysql {
+    width: 105px;
+    height: 55px;
+    left: -49px; }
+
+  .skill-tree .seo {
+    width: 100px;
+    height: 75px;
+    right: -50px; }
+
+  .regex {
+    font-size: 1rem;
+    left: -72px; }
+
+  .reg,
+  .ex {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=estilos.css.map */
