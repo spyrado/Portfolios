@@ -12,7 +12,7 @@ nodeLeft.animate({
 },500);
 
 nodeLeft.animate({   
-    borderBottomWidth: "2px",
+    borderBottomWidth: "7px",
     opacity: 1
 },500);
 
@@ -31,7 +31,7 @@ setTimeout(function(){
     },500);
     
     nodeRight.animate({   
-        borderBottomWidth: "2px",
+        borderBottomWidth: "7px",
         opacity: 1
     },500);
 
