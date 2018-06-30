@@ -10,8 +10,8 @@
         }
         
         .title{
-            color: $cor-principal;
-            text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.32);
+            color: $cor-secundaria;
+            text-shadow: 2px 1px 45px rgba(0, 0, 0, 0.72);
         }
         
        
@@ -21,7 +21,7 @@
         
         .quadro-legend{
             
-            color: $cor-secundaria;
+            color: $jumbotron-title-legend;
             font-weight: bold;
             
             &::after{
@@ -30,7 +30,7 @@
                 height: 3px;
                 width: 5%;
                 margin: 0 auto;
-                background: $cor-secundaria;
+                background: $jumbotron-title-legend;
                 margin-top: 4px;
                 transition: .2s;
                 animation: barra-animada 1s ease-in-out 1s infinite alternate;
