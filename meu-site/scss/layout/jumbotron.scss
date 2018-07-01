@@ -32,7 +32,9 @@
                 margin: 0 auto;
                 background: $jumbotron-title-legend;
                 margin-top: 4px;
+                -webkit-transition: .2s;
                 transition: .2s;
+                -webkit-animation: barra-animada 1s ease-in-out 1s infinite alternate;
                 animation: barra-animada 1s ease-in-out 1s infinite alternate;
             }
         }
@@ -43,6 +45,10 @@
     }
 }
 
+@-webkit-keyframes barra-animada {
+    0%   {width: 0%}
+    100% {width: 250px}
+}
 @keyframes barra-animada {
     0%   {width: 0%}
     100% {width: 250px}

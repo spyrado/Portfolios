@@ -6,7 +6,7 @@ let seeRight = $('.see-right');
 
 
 
-    
+
 nodeLeft.animate({   
     opacity: .3
 },500);
@@ -44,3 +44,14 @@ setTimeout(function(){
     }, 1000);
     
 }, 2000);    
+
+function iniciaNode(node, opacity, tempo,[]){
+    let prop = {
+        opacidadeInicial: opacity,
+        opacidadeFinal: opacity,
+        borderBottomWidth: tamanho
+    }
+    node.animate({   
+        opacity: prop.opacidadeInicial
+    },tempo);
+}
