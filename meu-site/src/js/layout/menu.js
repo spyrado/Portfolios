@@ -88,7 +88,12 @@ function hideMenuOnScroll(){
         
         $(document).scroll(function(){
             if(tamanhoTelaMenorQue(tela_1023)){
-                
+
+                if($(this).scrollTop() > 660){
+                    menuHeader.removeClass("hide-menu");
+                    menuHeader.addClass("show-menu");
+                    return;
+                }
                 if($(this).scrollTop() > scrollInicial){
                     menuHeader.removeClass("show-menu");
                     menuHeader.addClass("hide-menu");
