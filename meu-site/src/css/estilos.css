@@ -7706,6 +7706,13 @@ a.text-dark:hover, a.text-dark:focus {
     width: 0%; }
   100% {
     width: 250px; } }
+.educacao, .historico-profissional {
+  height: 200px; }
+
+.sobre-mim .sub-title,
+.sobre-mim .title {
+  color: #575757; }
+
 .section-skill-tree {
   width: 80%;
   margin: 0 auto;

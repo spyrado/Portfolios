@@ -1,5 +1,6 @@
-var tela_1024 = 1024;
-var tela_1023 = 1023;
+var tela_1024 = 1024
+    ,tela_1023 = 1023
+    ,finalDaTelaMobile = 650;
 
 function menuInterativo(){
     interandoComMenu();
@@ -89,7 +90,7 @@ function hideMenuOnScroll(){
         $(document).scroll(function(){
             if(tamanhoTelaMenorQue(tela_1023)){
 
-                if($(this).scrollTop() > 660){
+                if($(this).scrollTop() > finalDaTelaMobile){
                     menuHeader.removeClass("hide-menu");
                     menuHeader.addClass("show-menu");
                     return;
