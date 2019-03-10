@@ -1,24 +1,24 @@
-let nodeLeft = $('.section-skill-tree .node-left');
-let nodeRight = $('.section-skill-tree .node-right');
-let log = $('.section-skill-tree .log');
-let seeLeft = $('.see-left');
-let seeRight = $('.see-right');
+let $nodeLeft = $('.section-skill-tree .node-left')
+    ,$nodeRight = $('.section-skill-tree .node-right')
+    ,$log = $('.section-skill-tree .log')
+    ,$seeLeft = $('.see-left')
+    ,$seeRight = $('.see-right');
 
 
 
 
-nodeLeft.animate({   
+$nodeLeft.animate({   
     opacity: .3
 },500);
 
-nodeLeft.animate({   
+$nodeLeft.animate({   
     borderBottomWidth: "7px",
     opacity: 1
 },500);
 
 setTimeout(function(){
     
-    seeLeft.animate({   
+    $seeLeft.animate({   
         opacity: 1
     },1000);
     
@@ -26,18 +26,18 @@ setTimeout(function(){
 
 setTimeout(function(){
     
-    nodeRight.animate({
+    $nodeRight.animate({
         opacity: .3
     },500);
     
-    nodeRight.animate({   
+    $nodeRight.animate({   
         borderBottomWidth: "7px",
         opacity: 1
     },500);
 
     setTimeout(function(){
 
-        seeRight.animate({   
+        $seeRight.animate({   
             opacity: 1
         },1000);
 
