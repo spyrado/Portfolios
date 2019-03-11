@@ -1,5 +1,8 @@
 .menu-header{
     background: $white;
+    @media #{$mq-1024} {
+        background: transparent;
+    }
     .navbar-brand{
         margin-right: 0;
         padding: 0;

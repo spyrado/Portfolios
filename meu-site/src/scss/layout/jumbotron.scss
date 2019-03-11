@@ -2,8 +2,19 @@
     
     .jumbotron{
            
-        background: linear-gradient(#f9f9f9 50%, rgba($cor-principal, 0.66) 90%);
+        // background: linear-gradient(#f9f9f9 50%, rgba($cor-principal, 0.66) 90%);
+        background-image: url('../img/paisagem.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% -70%;
         margin-bottom: 0;
+        -webkit-box-shadow: inset 133px 200px 300px 156px rgba(255,255,255,0.6);
+        -moz-box-shadow: inset 133px 200px 300px 156px rgba(255,255,255,0.6);
+        box-shadow: inset 133px 200px 300px 156px rgba(255,255,255,0.6);
+
+        @media (min-width: 900px){
+            background-position: center; 
+        }
         
          @media #{$mq-1024}{
             padding-top: 4rem;
@@ -34,10 +45,6 @@
                 animation: barra-animada 1s ease-in-out 1s infinite alternate;
             }
         }
-    }
-     @media #{$mq-1024}{
-         
-        padding-top: 3.9375rem;
     }
 }
 

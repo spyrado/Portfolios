@@ -7595,6 +7595,9 @@ a.text-dark:hover, a.text-dark:focus {
     padding-bottom: 63px; } }
 .menu-header {
   background: #fff; }
+  @media (min-width: 1024px) {
+    .menu-header {
+      background: transparent; } }
   .menu-header .navbar-brand {
     margin-right: 0;
     padding: 0;
@@ -7639,14 +7642,14 @@ a.text-dark:hover, a.text-dark:focus {
           width: 0%;
           height: 2px;
           transition: .3s;
-          background: linear-gradient(to right, #5c14bb 14%, #ffd26d 77.7%); }
+          background: linear-gradient(to right, #3978a3 14%, #7fe6f1 77.7%); }
         .menu-header .nav-item:hover .nav-link {
           color: rgba(0, 0, 0, 0.9); }
         .menu-header .nav-item:hover::after {
           width: 100%; } }
     .menu-header .nav-item .menu-icon {
-      background: #5c14bb;
-      background: -webkit-linear-gradient(#5c14bb 14%, #ffd26d 77.7%);
+      background: #3978a3;
+      background: -webkit-linear-gradient(#3978a3 14%, #7fe6f1 77.7%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .menu-header .nav-item .nav-link {
@@ -7671,30 +7674,36 @@ a.text-dark:hover, a.text-dark:focus {
   transition: .3s; }
 
 .principal .jumbotron {
-  background: linear-gradient(#f9f9f9 50%, rgba(92, 20, 187, 0.66) 90%);
-  margin-bottom: 0; }
+  background-image: url("../img/paisagem.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% -70%;
+  margin-bottom: 0;
+  -webkit-box-shadow: inset 133px 200px 300px 156px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: inset 133px 200px 300px 156px rgba(255, 255, 255, 0.6);
+  box-shadow: inset 133px 200px 300px 156px rgba(255, 255, 255, 0.6); }
+  @media (min-width: 900px) {
+    .principal .jumbotron {
+      background-position: center; } }
   @media (min-width: 1024px) {
     .principal .jumbotron {
       padding-top: 4rem; } }
   .principal .jumbotron .title {
     color: #575757; }
 .principal .quadro .quadro-legend {
-  color: #fff; }
+  color: #575757; }
   .principal .quadro .quadro-legend::after {
     content: '';
     display: block;
     height: 3px;
     width: 5%;
     margin: 0 auto;
-    background: #fff;
+    background: #575757;
     margin-top: 4px;
     -webkit-transition: .2s;
     transition: .2s;
     -webkit-animation: barra-animada 1s ease-in-out 1s infinite alternate;
     animation: barra-animada 1s ease-in-out 1s infinite alternate; }
-@media (min-width: 1024px) {
-  .principal {
-    padding-top: 3.9375rem; } }
 
 @-webkit-keyframes barra-animada {
   0% {
@@ -7729,7 +7738,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 4rem;
   font-weight: bold;
   font-size: 2rem;
-  border: 3px solid #5c14bb;
+  border: 3px solid #3978a3;
   border-radius: 10px;
   padding: 1rem; }
 
@@ -7747,8 +7756,8 @@ a.text-dark:hover, a.text-dark:focus {
   float: left;
   width: 100px;
   height: 50px;
-  border-bottom: 0 solid #5c14bb;
-  border-right: 7px solid #5c14bb;
+  border-bottom: 0 solid #3978a3;
+  border-right: 7px solid #3978a3;
   border-bottom-left-radius: 1rem;
   opacity: 0;
   clear: right; }
@@ -7759,8 +7768,8 @@ a.text-dark:hover, a.text-dark:focus {
   float: right;
   width: 100px;
   height: 50px;
-  border-bottom: 0 solid #5c14bb;
-  border-left: 7px solid #5c14bb;
+  border-bottom: 0 solid #3978a3;
+  border-left: 7px solid #3978a3;
   border-bottom-right-radius: 1rem;
   opacity: 0;
   clear: left; }
@@ -7768,7 +7777,7 @@ a.text-dark:hover, a.text-dark:focus {
 .log {
   width: 100px;
   height: 50px;
-  border-right: 7px solid #5c14bb;
+  border-right: 7px solid #3978a3;
   clear: both; }
 
 /* Ajuste Logos */
@@ -7913,7 +7922,7 @@ a.text-dark:hover, a.text-dark:focus {
   .ex {
     font-size: 1rem; } }
 .rodape {
-  background: #5c14bb;
+  background: #3978a3;
   color: #fff; }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,6 +1,6 @@
 var tela_1024 = 1024
     ,tela_1023 = 1023
-    ,finalDaTelaMobile = 650;
+    ,finalDaTelaMobile = 1668;
 
 function menuInterativo(){
     interandoComMenu();
@@ -17,7 +17,6 @@ function configuraMenuOnLoad(){
             removeClasse($(".menu-header"),"fixed-bottom");
             adicionaClasse($(".menu-header"),"fixed-top");
             removeClasse($(".menu-header"),"border-top");
-            adicionaClasse($(".menu-header"),"border-bottom");
             limpaClassesMobile();
        }else{
             removeClasse($(".navbar"),"container");
@@ -25,7 +24,6 @@ function configuraMenuOnLoad(){
             adicionaClasse($(".menu-header"),"fixed-bottom");
             removeClasse($(".menu-header"),"fixed-top");
             adicionaClasse($(".menu-header"),"border-top");
-            removeClasse($(".menu-header"),"border-bottom");
        }
 }
 function configuraMenuOnResize(){
@@ -37,7 +35,6 @@ function configuraMenuOnResize(){
             removeClasse(menuHeader,"fixed-bottom");
             adicionaClasse(menuHeader,"fixed-top");
             removeClasse(menuHeader,"border-top");
-            adicionaClasse(menuHeader,"border-bottom");
             limpaClassesMobile();
             //verificaSeLiFoiClicada
             
@@ -49,7 +46,6 @@ function configuraMenuOnResize(){
             adicionaClasse(menuHeader,"fixed-bottom");
             removeClasse(menuHeader,"fixed-top");
             adicionaClasse(menuHeader,"border-top");
-            removeClasse(menuHeader,"border-bottom");
             incluiClassesMobile();
            
             //hideMenuOnScroll
